@@ -2,42 +2,24 @@ package com.harbourspace.unsplash.ui
 
 import android.util.Log
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.harbourspace.unsplash.ui.api.UnsplashApiProvider
 import com.harbourspace.unsplash.ui.data.UnsplashCollection
 import com.harbourspace.unsplash.ui.data.UnsplashItem
 import com.harbourspace.unsplash.ui.data.cb.UnsplashResult
-import com.harbourspace.unsplash.ui.repository.UnsplashRepository
 
 private const val TAG = "UnsplashViewModel"
-class UnsplashViewModel(
-    private val repository: UnsplashRepository
-) : ViewModel(), ViewModelProvider.Factory, UnsplashResult {
+class UnsplashViewModel : ViewModel(), UnsplashResult {
 
     private val _items = MutableLiveData<List<UnsplashItem>>()
-    val items: MediatorLiveData<List<UnsplashItem>> = MediatorLiveData<List<UnsplashItem>>().apply {
-        addSource(_items) { this.value = _items.value }
-        addSource(repository.items) { this.value =repository.items.value }
-    }
+    val items: LiveData<List<UnsplashItem>> = _items
 
     private val _collections = MutableLiveData<List<UnsplashCollection>>()
     val collections: LiveData<List<UnsplashCollection>> = _collections
 
     private val _loading = MutableLiveData(false)
     val loading: LiveData<Boolean> = _loading
-
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(UnsplashViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return UnsplashViewModel(repository) as T
-        }
-
-        throw IllegalArgumentException("Unknown ViewModel class")
-
-    }
 
     fun searchImages(keyword: String) {
         provider.searchImages(keyword, this)
@@ -49,6 +31,7 @@ class UnsplashViewModel(
 
     fun fetchImages() {
         _loading.value = true
+
         provider.fetchImages(this)
     }
 
@@ -58,11 +41,6 @@ class UnsplashViewModel(
 
     override fun onDataFetchedSuccess(images: List<UnsplashItem>) {
         Log.d(TAG, "onDataFetchedSuccess | Received ${images.size} images")
-
-        for (image in images) {
-            repository.insert(image)
-        }
-
         _items.value = images
         _loading.value = false
     }
