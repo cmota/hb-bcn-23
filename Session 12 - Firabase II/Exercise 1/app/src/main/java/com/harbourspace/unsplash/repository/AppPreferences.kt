@@ -1,4 +1,4 @@
-package com.harbourspace.unsplash.ui.repository
+package com.harbourspace.unsplash.repository
 
 import android.app.Activity
 import android.content.Context

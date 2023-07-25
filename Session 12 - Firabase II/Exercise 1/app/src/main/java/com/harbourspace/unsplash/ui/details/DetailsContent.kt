@@ -21,7 +21,7 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.harbourspace.unsplash.R
 import com.harbourspace.unsplash.ui.AddImageInformation
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashItem
 
 @Composable
 fun DetailsContent(

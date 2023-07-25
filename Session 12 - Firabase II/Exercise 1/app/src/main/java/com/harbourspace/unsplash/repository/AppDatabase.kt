@@ -1,11 +1,10 @@
-package com.harbourspace.unsplash.ui.repository
+package com.harbourspace.unsplash.repository
 
 import android.content.Context
-import android.provider.CalendarContract.Instances
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashItem
 import java.util.concurrent.Executors
 
 @Database(entities = [UnsplashItem::class], version = 1, exportSchema = false)

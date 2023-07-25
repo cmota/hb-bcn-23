@@ -1,4 +1,4 @@
-package com.harbourspace.unsplash.ui
+package com.harbourspace.unsplash
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -6,11 +6,11 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.harbourspace.unsplash.ui.api.UnsplashApiProvider
-import com.harbourspace.unsplash.ui.data.UnsplashCollection
-import com.harbourspace.unsplash.ui.data.UnsplashItem
-import com.harbourspace.unsplash.ui.data.cb.UnsplashResult
-import com.harbourspace.unsplash.ui.repository.UnsplashRepository
+import com.harbourspace.unsplash.api.UnsplashApiProvider
+import com.harbourspace.unsplash.data.UnsplashCollection
+import com.harbourspace.unsplash.data.UnsplashItem
+import com.harbourspace.unsplash.data.cb.UnsplashResult
+import com.harbourspace.unsplash.repository.UnsplashRepository
 
 private const val TAG = "UnsplashViewModel"
 class UnsplashViewModel(

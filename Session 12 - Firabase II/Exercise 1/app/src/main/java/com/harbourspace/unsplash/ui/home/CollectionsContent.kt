@@ -27,7 +27,7 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.google.accompanist.pager.HorizontalPagerIndicator
 import com.harbourspace.unsplash.R
-import com.harbourspace.unsplash.ui.UnsplashViewModel
+import com.harbourspace.unsplash.UnsplashViewModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

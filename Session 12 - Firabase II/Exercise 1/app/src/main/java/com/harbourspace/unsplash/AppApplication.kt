@@ -1,8 +1,8 @@
 package com.harbourspace.unsplash
 
 import android.app.Application
-import com.harbourspace.unsplash.ui.repository.AppDatabase
-import com.harbourspace.unsplash.ui.repository.UnsplashRepository
+import com.harbourspace.unsplash.repository.AppDatabase
+import com.harbourspace.unsplash.repository.UnsplashRepository
 
 class AppApplication: Application() {
 

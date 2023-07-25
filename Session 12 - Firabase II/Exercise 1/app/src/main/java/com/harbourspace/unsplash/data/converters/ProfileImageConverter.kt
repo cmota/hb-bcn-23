@@ -1,7 +1,7 @@
-package com.harbourspace.unsplash.ui.data.converters
+package com.harbourspace.unsplash.data.converters
 
 import androidx.room.TypeConverter
-import com.harbourspace.unsplash.ui.data.ProfileImage
+import com.harbourspace.unsplash.data.ProfileImage
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 

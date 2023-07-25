@@ -1,10 +1,9 @@
-package com.harbourspace.unsplash.ui.api
+package com.harbourspace.unsplash.api
 
-import android.util.Log
-import com.harbourspace.unsplash.ui.data.UnsplashCollection
-import com.harbourspace.unsplash.ui.data.UnsplashItem
-import com.harbourspace.unsplash.ui.data.UnsplashSearch
-import com.harbourspace.unsplash.ui.data.cb.UnsplashResult
+import com.harbourspace.unsplash.data.UnsplashCollection
+import com.harbourspace.unsplash.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashSearch
+import com.harbourspace.unsplash.data.cb.UnsplashResult
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call

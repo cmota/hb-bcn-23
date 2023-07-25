@@ -1,9 +1,9 @@
-package com.harbourspace.unsplash.ui.data
+package com.harbourspace.unsplash.data
 
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.TypeConverters
-import com.harbourspace.unsplash.ui.data.converters.ProfileImageConverter
+import com.harbourspace.unsplash.data.converters.ProfileImageConverter
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 

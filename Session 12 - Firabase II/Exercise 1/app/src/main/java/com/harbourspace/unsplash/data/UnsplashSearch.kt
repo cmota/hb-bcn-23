@@ -1,4 +1,4 @@
-package com.harbourspace.unsplash.ui.data
+package com.harbourspace.unsplash.data
 
 import androidx.room.Entity
 

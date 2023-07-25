@@ -1,8 +1,8 @@
-package com.harbourspace.unsplash.ui.api
+package com.harbourspace.unsplash.api
 
-import com.harbourspace.unsplash.ui.data.UnsplashCollection
-import com.harbourspace.unsplash.ui.data.UnsplashItem
-import com.harbourspace.unsplash.ui.data.UnsplashSearch
+import com.harbourspace.unsplash.data.UnsplashCollection
+import com.harbourspace.unsplash.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashSearch
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers

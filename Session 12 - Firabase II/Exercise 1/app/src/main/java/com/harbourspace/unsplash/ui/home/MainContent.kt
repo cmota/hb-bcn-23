@@ -54,8 +54,8 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.harbourspace.unsplash.R
-import com.harbourspace.unsplash.ui.UnsplashViewModel
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.UnsplashViewModel
+import com.harbourspace.unsplash.data.UnsplashItem
 import com.harbourspace.unsplash.ui.theme.colorContent20Transparency
 import com.harbourspace.unsplash.ui.theme.colorContent85Transparency
 

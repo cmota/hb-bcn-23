@@ -28,12 +28,14 @@ import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.harbourspace.unsplash.AppApplication
+import com.harbourspace.unsplash.EXTRA_IMAGE
 import com.harbourspace.unsplash.R
+import com.harbourspace.unsplash.UnsplashViewModel
 import com.harbourspace.unsplash.ui.about.AboutContent
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashItem
 import com.harbourspace.unsplash.ui.home.MainScreen
 import com.harbourspace.unsplash.ui.navigation.BottomNavigationScreen
-import com.harbourspace.unsplash.ui.repository.AppPreferences
+import com.harbourspace.unsplash.repository.AppPreferences
 import com.harbourspace.unsplash.ui.theme.UnsplashTheme
 
 enum class Tab(@StringRes val tab: Int) {

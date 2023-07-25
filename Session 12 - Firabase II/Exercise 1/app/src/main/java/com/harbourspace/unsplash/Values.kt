@@ -1,3 +1,3 @@
-package com.harbourspace.unsplash.ui
+package com.harbourspace.unsplash
 
 public const val EXTRA_IMAGE = "extra.image"

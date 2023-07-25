@@ -11,8 +11,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.harbourspace.unsplash.ui.UnsplashViewModel
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.UnsplashViewModel
+import com.harbourspace.unsplash.data.UnsplashItem
 
 @Composable
 fun MainScreen(

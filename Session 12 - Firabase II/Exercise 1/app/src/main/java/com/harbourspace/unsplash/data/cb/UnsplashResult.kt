@@ -1,7 +1,7 @@
-package com.harbourspace.unsplash.ui.data.cb
+package com.harbourspace.unsplash.data.cb
 
-import com.harbourspace.unsplash.ui.data.UnsplashCollection
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashCollection
+import com.harbourspace.unsplash.data.UnsplashItem
 
 interface UnsplashResult {
 

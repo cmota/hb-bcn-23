@@ -19,10 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.harbourspace.unsplash.EXTRA_IMAGE
 import com.harbourspace.unsplash.R
-import com.harbourspace.unsplash.ui.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashItem
 import com.harbourspace.unsplash.ui.details.DetailsContent
-import com.harbourspace.unsplash.ui.repository.AppPreferences
+import com.harbourspace.unsplash.repository.AppPreferences
 import com.harbourspace.unsplash.ui.theme.UnsplashTheme
 
 class DetailsActivity : ComponentActivity() {

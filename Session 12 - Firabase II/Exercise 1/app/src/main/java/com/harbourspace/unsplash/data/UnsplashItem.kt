@@ -1,13 +1,13 @@
-package com.harbourspace.unsplash.ui.data
+package com.harbourspace.unsplash.data
 
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import com.harbourspace.unsplash.ui.data.converters.LinksConverter
-import com.harbourspace.unsplash.ui.data.converters.ListCurrentUserCollectionConverter
-import com.harbourspace.unsplash.ui.data.converters.UrlsConverter
-import com.harbourspace.unsplash.ui.data.converters.UserConverter
+import com.harbourspace.unsplash.data.converters.LinksConverter
+import com.harbourspace.unsplash.data.converters.ListCurrentUserCollectionConverter
+import com.harbourspace.unsplash.data.converters.UrlsConverter
+import com.harbourspace.unsplash.data.converters.UserConverter
 import kotlinx.parcelize.Parcelize
 
 @Entity("UnsplashItem")

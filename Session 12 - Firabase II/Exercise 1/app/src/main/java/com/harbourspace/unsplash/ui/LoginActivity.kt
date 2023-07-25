@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.harbourspace.unsplash.R
-import com.harbourspace.unsplash.ui.repository.AppPreferences
+import com.harbourspace.unsplash.repository.AppPreferences
 import com.harbourspace.unsplash.ui.theme.UnsplashTheme
 
 private const val TAG = "LoginActivity"
