@@ -38,14 +38,14 @@ class AboutActivity  : ComponentActivity() {
                 Column(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.Black)
+
                         .padding(16.dp),
                 ) {
 
                     Column(
                         modifier = Modifier
                             .fillMaxSize()
-                            .background(Color.Black)
+
                             .padding(16.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center
@@ -53,7 +53,7 @@ class AboutActivity  : ComponentActivity() {
 
                         Text(
                             text = stringResource(id = R.string.about_text),
-                            color = Color.White,
+
                             fontSize = 19.sp,
                             fontStyle = FontStyle.Normal
                         )

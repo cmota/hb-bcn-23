@@ -38,7 +38,7 @@ import com.harbourspace.unsplash.ui.api.UnsplashApiProvider
 import com.harbourspace.unsplash.ui.data.UnsplashItem
 import com.harbourspace.unsplash.ui.data.cb.UnsplashResult
 import com.harbourspace.unsplash.ui.exercises.ExerciseActivity
-import com.harbourspace.unsplash.ui.theme.Purple80
+//import com.harbourspace.unsplash.ui.theme.Purple80
 import com.harbourspace.unsplash.ui.theme.UnsplashTheme
 
 private const val TAG = "MainActivity"
@@ -92,7 +92,7 @@ class MainActivity : ComponentActivity() {
                                     .padding(8.dp)
                                     .clip(RoundedCornerShape(16.dp))
                                     .clickable { openDetailsActivity(R.drawable.bcn_la_sagrada_familia) },
-                                color = Purple80
+//                                color = Purple80
                             ) {
 
                                 Column(
